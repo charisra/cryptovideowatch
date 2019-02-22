@@ -1,0 +1,156 @@
+@mixin font-base {
+	padding: 0;
+	margin: 0;
+	line-height: 1.3;
+	font-weight: 600;
+}
+
+img:hover, a{
+	cursor: pointer;
+
+}
+a:hover{
+	text-decoration:none;
+}
+
+h4 {
+	@include font-base;
+}
+
+p {
+	@include font-base;
+	color: white;
+	font-size: 0.7rem;
+}
+
+body {
+	background-color: #202328;
+	color: white;
+}
+
+
+header {
+	position: fixed;
+	text-align: center;
+	background-color: #fff;
+}
+
+section{
+	position:fixed;
+	text-align: center;
+	background-color: #fff;
+}
+
+
+.logo {
+	width: 120px;
+	padding: 10px;
+}
+
+article {
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+	border: 1px solid #8a8b8c;
+	border-radius: 8px;
+	margin: 0 auto;
+	&:hover {
+		border: 2px solid #ff9999;
+	}
+}
+
+.thumb {
+	height: 70px;
+	border-radius: 4px;
+}
+
+.details {
+	padding: 8px 8px;
+}
+
+#video {
+	max-width: 560px;
+	background-color: #191919;
+	padding-bottom: 15px;
+}
+@media only screen and (max-width: 576px) {
+	.mainDescription{
+		display:none;
+	}
+	#video {
+		width:100%;
+		top:0px;
+		left:0px;
+		}
+		.row1{
+			margin-top: 200px;
+		}
+		#channelSelect{
+			display:block;
+			margin-bottom:10px
+		}
+}
+
+@media only screen and (min-width: 576px) {
+#coinSelect{
+margin-left: 10px;
+}
+}
+
+.cryptoTag {
+  background: #3d3d3d;
+  border-radius: 3px;
+  color: #eee;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px 0 13px;
+  position: relative;
+  margin: 5px 3px 5px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+	font: 12px/2.0 'PT Sans', serif;
+}
+
+.cryptoTag:hover {
+  background-color: crimson;
+  color: white;
+}
+
+.cryptoTag:hover::after {
+   border-left-color: crimson;
+}
+
+.selectChannels{
+	padding-bottom: 15px;
+	margin-top:10px;
+	max-width:100%;
+}
+
+.multiselectForm{
+	display:inline;
+	margin-right:10px;
+}
+
+#coinSelect{
+	display:inline;
+}
+
+.customNav{
+height:42px;
+}
+
+.videoInArticle{
+	max-width: 125px;
+}
+
+
+.navbar-text{
+	margin-left: 350px;
+}
+/*.icon {
+    background: url('assets/youtube.png');
+    height: 16px;
+    width: 16px;
+    display: block;
+}*/
