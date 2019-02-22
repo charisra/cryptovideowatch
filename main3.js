@@ -1,5 +1,3 @@
-//channelId: 'UCNZb8eUomqPYgrdVeOn4eZA'
-
   function main3 () {
     console.log('main3.js');
     /*** Randomize array element order in-place.

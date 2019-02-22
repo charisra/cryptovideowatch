@@ -1,5 +1,4 @@
 function channel1 (youtubeChannelID) {
-//var deferred = $.Deferred();
 options.channelId= youtubeChannelID;
 loadVids();
 
@@ -35,7 +34,4 @@ function loadVids() {
         });
   }
 }
-
-    //deferred.resolve();
-    //return deferred.promise();
 }
