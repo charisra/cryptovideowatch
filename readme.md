@@ -1,6 +1,6 @@
-CryptoVideoWatch
+### CryptoVideoWatch - Crypto Videos Aggregator
 
-This repo includes the code for a Simple Crypto Videos Aggregator. A live version here: https://charisra.github.io/cryptovideowatch/
+This repo includes the code for a Crypto Videos Aggregator. A live version here: https://charisra.github.io/cryptovideowatch/
 It's using the YouTube API along with vanilla Javascript, HTML, CSS, Bootstrap and Jquery to create an app that aggregates and presents videos from select YouTube channels. 
 
 Comments on my code are welcome. Contributions, too. 
