@@ -1,5 +1,4 @@
   function main3 () {
-    console.log('main3.js');
     /*** Randomize array element order in-place.
     * Using Durstenfeld shuffle algorithm.*/
     function shuffleArray(array) {
@@ -57,9 +56,7 @@
     // CLICK EVENT
     $('main').on('click', 'article', function () {
         var id = $(this).attr('data-key');
-        console.log(id);
         var descr = $(this).attr('data-description');
-        console.log(descr);
         mainVid(id,descr);
     });
 
@@ -109,15 +106,12 @@
 // Fires when ChannelList 'Submit'is clicked
 $("#channelSelect").unbind('submit').bind('submit',function(e){
   e.preventDefault();
-  console.log('channelSelect fired');
   var bool = false;
   valuesarr= [];
   $("#col1").empty();
   $('#data_source option:selected').each(function(){
     valuesarr.push($(this).val());
-    console.log(valuesarr);
   });
-console.log(valuesarr);
   for (i=0;i<valuesarr.length;i++){
   if(youtubeChannelNames.indexOf(valuesarr[i])>=0){
     bool = true;
@@ -147,7 +141,6 @@ $("#coinSelect").unbind('submit').bind('submit',function(e){
   $('#coin_source option:selected').each(function(){
     coinsarr.push($(this).val());
   });
-console.log(coinsarr);
 for (i=0;i<arr.length;i++){
   newarr2 = arr[i].tags.some(function(val){
     return coinsarr.indexOf(val)>=0
@@ -158,13 +151,7 @@ for (i=0;i<arr.length;i++){
     newarr2 = [];
 };
 arr = newarr;
-  /*for (j=0;j<coinsarr.length;j++){
-    if(coinsarr[j].indexOf(arr[i].tags)>=0){
-      newarr.push(arr[i]);
-      console.log('newarr  '+newarr);
-      arr = newarr;
-    }
-  } */
+  
 
 function resetarr (){  //resets array after rendering the selected coins. That way if a new selection of coins happens, the entire array is available
   arr = temparr;

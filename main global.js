@@ -2086,7 +2086,7 @@ for(i=0;i<youtubeChannelID.length;i++){
 var valuesarr =[];
 var coinsarr = [];
 var arr= [];
-var key = 'YOUTUBE API KEY HERE';
+var key = 'AIzaSyAtDMEH9ZB-1FlcfTxmGMYolsF1F7FO2xU';
 var URL = 'https://www.googleapis.com/youtube/v3/search';
 options = {
    part: 'snippet',

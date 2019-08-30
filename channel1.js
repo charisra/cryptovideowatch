@@ -9,7 +9,6 @@ function loadVids() {
     });
 
     function resultsLoop(data) {
-      console.log('channel1.js');
         $.each(data.items, function (i, item) {
             var thumb = item.snippet.thumbnails.medium.url;
             var title = item.snippet.title;
